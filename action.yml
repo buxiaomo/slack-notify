@@ -1,0 +1,34 @@
+name: 'slack-notify'
+description: 'send message to slack'
+inputs:
+  channel:
+    description: 'slack channel name'
+    required: true
+
+  username:
+    description: 'slack message of username'
+    default: 'webhookbot'
+
+  icon_url:
+    description: 'slack user icon'
+    default: 'https://avatars.githubusercontent.com/u/65916846?v=4'
+
+  title:
+    description: 'message title'
+    required: true
+
+  text:
+    description: 'message text'
+    required: true
+
+  webhook_url:
+    description: 'slack webhook url'
+    required: true
+
+outputs:
+  status:
+    description: 'response data'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
