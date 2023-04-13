@@ -62,7 +62,7 @@ See the [versioning documentation](https://github.com/actions/toolkit/blob/maste
 You can now consume the action by referencing the v1 branch
 
 ```yaml
-uses: buxiaomo/slack-notify@v4
+uses: buxiaomo/slack-notify@v1
 with:
   channel: '#kubeasy'
   username: 'webhookbot'
